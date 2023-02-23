@@ -1,4 +1,4 @@
-# .1 JSP (JavaServer Pages): 
+# 1. JSP (JavaServer Pages): 
 JSP là một công nghệ cho phép tạo các trang web động bằng cách kết hợp mã Java với HTML, CSS và JavaScript. Trong một trang JSP, bạn có thể sử dụng các thẻ JSP để chèn mã Java và các thẻ HTML để hiển thị nội dung tương ứng trên trang web. Khi người dùng truy cập trang web JSP, máy chủ sẽ xử lý các thẻ JSP và chuyển đổi chúng thành mã Java, sau đó thực thi mã Java để tạo ra nội dung động trên trang web. Kết quả cuối cùng là một trang web HTML hoàn chỉnh được gửi đến trình duyệt của người dùng.
 
 # 2. Servlet: 
