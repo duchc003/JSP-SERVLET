@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\564898513.index
+\Calculater\src\main\java
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1150780658.index
+\IT17202\src\main\java
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3313681688.index
+\DoGetorDoPost\src\main\java
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2324241919.index
+\InputYourName\src\main\java
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2311821566.index
+\IT17202\src\main\java
+C:\java web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3383703059.index
+\HelloWorld\src\main\java

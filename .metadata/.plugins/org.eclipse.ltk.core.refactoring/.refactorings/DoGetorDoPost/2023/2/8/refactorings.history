@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DoGetorDoPost/src/main/webapp/view/loginjsp.jsp&apos; to &apos;Login.jsp&apos;" description="Rename resource &apos;loginjsp.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/view/loginjsp.jsp" name="Login.jsp" stamp="1676811461830" updateReferences="true"/>
+</session>
