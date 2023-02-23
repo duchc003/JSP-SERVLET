@@ -16,3 +16,42 @@ HTTP Request và HTTP Response là hai khái niệm cơ bản trong giao thức 
 + Tiêu đề (header): chứa thông tin về phiên làm việc của server, định dạng tài liệu được trả về, mã hóa, cookie, vv.
 + Thân (body): chứa nội dung được trả về từ server.
 Ví dụ, khi bạn nhập URL của một trang web vào trình duyệt, trình duyệt sẽ gửi một yêu cầu HTTP đến server của trang web đó, yêu cầu trang web trả về mã HTML để hiển thị trên trình duyệt. Server sẽ xử lý yêu cầu đó và trả về một phản hồi HTTP, chứa mã HTML được trình duyệt sử dụng để hiển thị trang web.
+
+# 4. Dưới đây là một số cú pháp cơ bản của JSP và Servlet:
++ Cú pháp JSP:
+1. Khai báo các thư viện và các biến
+ <%@ page import="java.util.List"%>
+ <%@ page contentType="text/html; charset=UTF-8"%>
+ <% String name = "John"; %>
+2. Sử dụng biến JSP trong mã HTML
+ <h1>Welcome <%=name %>!</h1>
+3. Sử dụng cấu trúc điều kiện trong JSP
+ <% if (age > 18) { %>
+    <h2>You are an adult!</h2>
+ <% } else { %>
+    <h2>You are a minor!</h2>
+ <% } %>
+4. Sử dụng vòng lặp trong JSP
+  <ul>
+ <% for (int i = 1; i <= 10; i++) { %>
+    <li>Item <%= i %></li>
+ <% } %>
+  </ul>
+Cú pháp Servlet:
+1. Khai báo Servlet
+  @WebServlet("/hello")
+  public class HelloServlet extends HttpServlet {
+      protected void doGet(HttpServletRequest request, HttpServletResponse response)
+              throws ServletException, IOException {
+        // Process request here
+     }
+  }
+2. Lấy thông tin từ yêu cầu HTTP
+  String name = request.getParameter("name");
+  int age = Integer.parseInt(request.getParameter("age"));
+3. Điều hướng yêu cầu tới trang khác
+  response.sendRedirect("newpage.jsp");
+4. Gửi phản hồi về cho trình duyệt
+  response.setContentType("text/html;charset=UTF-8");
+  PrintWriter out = response.getWriter();
+  out.println("<html><body><h1>Hello World!</h1></body></html>");
