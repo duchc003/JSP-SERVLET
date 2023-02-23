@@ -16,3 +16,18 @@ HTTP Request và HTTP Response là hai khái niệm cơ bản trong giao thức 
 + Tiêu đề (header): chứa thông tin về phiên làm việc của server, định dạng tài liệu được trả về, mã hóa, cookie, vv.
 + Thân (body): chứa nội dung được trả về từ server.
 Ví dụ, khi bạn nhập URL của một trang web vào trình duyệt, trình duyệt sẽ gửi một yêu cầu HTTP đến server của trang web đó, yêu cầu trang web trả về mã HTML để hiển thị trên trình duyệt. Server sẽ xử lý yêu cầu đó và trả về một phản hồi HTTP, chứa mã HTML được trình duyệt sử dụng để hiển thị trang web.
+
+# 4. GET, POST và SERVICE
++ GET:
+  - Phương thức GET được sử dụng để yêu cầu dữ liệu từ máy chủ web.
+  - Dữ liệu được truyền thông qua URL và hiển thị trên địa chỉ URL.
+  - Phương thức này chỉ nên được sử dụng để lấy dữ liệu và không nên được sử dụng để gửi hoặc cập nhật dữ liệu.
++ POST:
+  - Phương thức POST được sử dụng để gửi dữ liệu đến máy chủ web.
+  - Dữ liệu được gửi trong phần thân yêu cầu và không hiển thị trên địa chỉ URL.
+  - Phương thức này thường được sử dụng để gửi hoặc cập nhật dữ liệu.
++ SERVICE:
+  - Phương thức SERVICE được sử dụng trong Servlet để xử lý yêu cầu HTTP.
+  - Khi một yêu cầu HTTP được gửi đến Servlet, phương thức SERVICE được gọi để xử lý yêu cầu đó.
+  - Phương thức SERVICE có thể được sử dụng để xử lý các phương thức HTTP khác nhau như GET, POST, PUT, DELETE và nhiều hơn nữa.
+Tóm lại, GET và POST được sử dụng để gửi dữ liệu đến máy chủ web hoặc lấy dữ liệu từ máy chủ web, trong khi SERVICE được sử dụng để xử lý yêu cầu HTTP.
