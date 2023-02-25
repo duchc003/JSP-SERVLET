@@ -52,7 +52,7 @@ Tóm lại, GET và POST được sử dụng để gửi dữ liệu đến má
   + getRemoteUser(): trả về tên người dùng đã xác thực được liên kết với yêu cầu, nếu có.
   + getRequestedSessionId(): trả về ID phiên được yêu cầu bởi yêu cầu.
   + isRequestedSessionIdValid(): trả về true nếu ID phiên được yêu cầu là hợp lệ trong ngữ cảnh
-#. 6. HttpServletResponse
+# 6. HttpServletResponse
   + addCookie(Cookie cookie): thêm một cookie vào phản hồi.
   + addHeader(String name, String value): thêm một tiêu đề vào phản hồi với tên và giá trị đã cho.
   + containsHeader(String name): kiểm tra xem tiêu đề với tên đã cho có được gửi trong phản hồi hay không.
