@@ -32,23 +32,23 @@ Ví dụ, khi bạn nhập URL của một trang web vào trình duyệt, trình
   - Phương thức SERVICE có thể được sử dụng để xử lý các phương thức HTTP khác nhau như GET, POST, PUT, DELETE và nhiều hơn nữa.
 Tóm lại, GET và POST được sử dụng để gửi dữ liệu đến máy chủ web hoặc lấy dữ liệu từ máy chủ web, trong khi SERVICE được sử dụng để xử lý yêu cầu HTTP.
 # 5. HttpServletRequest
-  getAuthType(): trả về kiểu xác thực (authentication) của yêu cầu.
-  getCookies(): trả về một mảng các cookie được gửi đến trong yêu cầu.
-  getDateHeader(String name): trả về giá trị của tiêu đề ngày (date header) được gửi đến trong yêu cầu, nếu có.
-  getHeader(String name): trả về giá trị của tiêu đề được gửi đến trong yêu cầu với tên đã cho.
-  getMethod(): trả về phương thức HTTP (GET, POST, PUT, DELETE, ...) được sử dụng trong yêu cầu.
-  getPathInfo(): trả về thông tin đường dẫn được yêu cầu sau tên servlet hoặc null nếu không có.
-  getQueryString(): trả về chuỗi query (nếu có) được gửi đến trong yêu cầu.
-  getRequestURI(): trả về URI được yêu cầu.
-  getServletPath(): trả về đường dẫn của servlet được yêu cầu.
-  getSession(): trả về phiên hiện tại liên kết với yêu cầu hoặc tạo một phiên mới nếu không có phiên hiện tại.
-  getParameter(String name): trả về giá trị của tham số được gửi đến với tên đã cho trong yêu cầu.
-  getParameterNames(): trả về một Enumeration chứa tất cả các tên tham số được gửi đến trong yêu cầu.
-  getParameterValues(String name): trả về một mảng các giá trị của tham số được gửi đến với tên đã cho trong yêu cầu.
-  setAttribute(String name, Object value): đặt thuộc tính với tên và giá trị đã cho trên yêu cầu.
-  getAttribute(String name): trả về giá trị của thuộc tính với tên đã cho trên yêu cầu.
-  getHeaderNames(): trả về tất cả các tên tiêu đề được gửi đến trong yêu cầu.
-  getIntHeader(String name): trả về giá trị của tiêu đề số nguyên được gửi đến trong yêu cầu, nếu có.
-  getRemoteUser(): trả về tên người dùng đã xác thực được liên kết với yêu cầu, nếu có.
-  getRequestedSessionId(): trả về ID phiên được yêu cầu bởi yêu cầu.
-  isRequestedSessionIdValid(): trả về true nếu ID phiên được yêu cầu là hợp lệ trong ngữ cảnh
+  + getAuthType(): trả về kiểu xác thực (authentication) của yêu cầu.
+  + getCookies(): trả về một mảng các cookie được gửi đến trong yêu cầu.
+  + getDateHeader(String name): trả về giá trị của tiêu đề ngày (date header) được gửi đến trong yêu cầu, nếu có.
+  + getHeader(String name): trả về giá trị của tiêu đề được gửi đến trong yêu cầu với tên đã cho.
+  + getMethod(): trả về phương thức HTTP (GET, POST, PUT, DELETE, ...) được sử dụng trong yêu cầu.
+  + getPathInfo(): trả về thông tin đường dẫn được yêu cầu sau tên servlet hoặc null nếu không có.
+  + getQueryString(): trả về chuỗi query (nếu có) được gửi đến trong yêu cầu.
+  + getRequestURI(): trả về URI được yêu cầu.
+  + getServletPath(): trả về đường dẫn của servlet được yêu cầu.
+  + getSession(): trả về phiên hiện tại liên kết với yêu cầu hoặc tạo một phiên mới nếu không có phiên hiện tại.
+  + getParameter(String name): trả về giá trị của tham số được gửi đến với tên đã cho trong yêu cầu.
+  + getParameterNames(): trả về một Enumeration chứa tất cả các tên tham số được gửi đến trong yêu cầu.
+  + getParameterValues(String name): trả về một mảng các giá trị của tham số được gửi đến với tên đã cho trong yêu cầu.
+  + setAttribute(String name, Object value): đặt thuộc tính với tên và giá trị đã cho trên yêu cầu.
+  + getAttribute(String name): trả về giá trị của thuộc tính với tên đã cho trên yêu cầu.
+  + getHeaderNames(): trả về tất cả các tên tiêu đề được gửi đến trong yêu cầu.
+  + getIntHeader(String name): trả về giá trị của tiêu đề số nguyên được gửi đến trong yêu cầu, nếu có.
+  + getRemoteUser(): trả về tên người dùng đã xác thực được liên kết với yêu cầu, nếu có.
+  + getRequestedSessionId(): trả về ID phiên được yêu cầu bởi yêu cầu.
+  + isRequestedSessionIdValid(): trả về true nếu ID phiên được yêu cầu là hợp lệ trong ngữ cảnh
