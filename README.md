@@ -52,3 +52,23 @@ Tóm lại, GET và POST được sử dụng để gửi dữ liệu đến má
   + getRemoteUser(): trả về tên người dùng đã xác thực được liên kết với yêu cầu, nếu có.
   + getRequestedSessionId(): trả về ID phiên được yêu cầu bởi yêu cầu.
   + isRequestedSessionIdValid(): trả về true nếu ID phiên được yêu cầu là hợp lệ trong ngữ cảnh
+#. 6. HttpServletResponse
+  + addCookie(Cookie cookie): thêm một cookie vào phản hồi.
+  + addHeader(String name, String value): thêm một tiêu đề vào phản hồi với tên và giá trị đã cho.
+  + containsHeader(String name): kiểm tra xem tiêu đề với tên đã cho có được gửi trong phản hồi hay không.
+  + encodeRedirectURL(String url): mã hóa lại URL để chuyển hướng, thêm thông tin phiên vào URL nếu cần thiết.
+  + encodeURL(String url): mã hóa lại URL, thêm thông tin phiên vào URL nếu cần thiết.
+  + sendError(int sc): gửi một mã lỗi HTTP với mã trạng thái đã cho.
+  + sendRedirect(String location): chuyển hướng yêu cầu đến URL đã cho.
+  + setDateHeader(String name, long date): đặt giá trị tiêu đề ngày (date header) với tên đã cho.
+  + setHeader(String name, String value): đặt giá trị tiêu đề với tên đã cho.
+  + setContentType(String type): đặt kiểu nội dung (content type) của phản hồi.
+  + setContentLength(int len): đặt độ dài nội dung (content length) của phản hồi.
+  + setStatus(int sc): đặt mã trạng thái (status code) của phản hồi.
+  + getWriter(): trả về một đối tượng PrintWriter được sử dụng để ghi nội dung phản hồi.
+  + getOutputStream(): trả về một đối tượng ServletOutputStream được sử dụng để ghi nội dung phản hồi.
+  + reset(): xóa nội dung phản hồi và thiết lập lại tất cả các thông số mặc định.
+  + resetBuffer(): xóa nội dung của bộ đệm phản hồi.
+  + setBufferSize(int size): đặt kích thước của bộ đệm phản hồi.
+  + flushBuffer(): gửi nội dung phản hồi tới máy khách và xóa bộ đệm phản hồi.
+  + isCommitted(): kiểm tra xem phản hồi đã được gửi tới máy khách chưa.
